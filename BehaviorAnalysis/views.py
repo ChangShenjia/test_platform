@@ -34,7 +34,7 @@ def login(request):
             logger.info('{username} 登录成功'.format(username=username))
             request.session["login_status"] = True
             request.session["now_account"] = username
-            return HttpResponseRedirect('/api/index/')
+            return HttpResponseRedirect('/index/')  # ('/api/index/')
         else:
             logger.info('{username} 登录失败, 请检查用户名或者密码'.format(username=username))
             request.session["login_status"] = False
@@ -72,7 +72,7 @@ def log_out(request):
             init_filter_session(request, type=False)
         except KeyError:
             logging.error('session invalid')
-        return HttpResponseRedirect("/api/login/")
+        return HttpResponseRedirect("/login/")  # ('/api/login/')
 
 
 @login_check
