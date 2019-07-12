@@ -1,7 +1,8 @@
 import logging
 from BehaviorAnalysis.models import UserInfo
 
-logger = logging.getLogger('HttpRunnerManager')
+
+logger = logging.getLogger('BehaviorAnalysis')
 
 def add_register_data(**kwargs):
     """

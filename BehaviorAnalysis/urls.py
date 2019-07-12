@@ -3,10 +3,9 @@ from BehaviorAnalysis import views
 
 
 urlpatterns = [
-    url(r'^register$', views.register),  # 注册
-    url(r'^login$', views.login),  # 登陆
-    url(r'^log_out$', views.log_out),  # 登出
-    url(r'^index$', views.index),  # 主页
+    url(r'^register/$', views.register),  # 注册
+    url(r'^login/$', views.login),  # 登陆
+    url(r'^index/$', views.index),  # 主页
 
 
     # url(r'^temp_filter$', views.temp_filter),  # 模板过滤器
