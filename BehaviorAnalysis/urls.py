@@ -1,11 +1,12 @@
-from django.conf.urls import include, url
+from django.conf.urls import url
 from BehaviorAnalysis import views
 
+
 urlpatterns = [
-    url(r'^api/register$', views.register),  # 注册
-    url(r'^api/login$', views.login),  # 登陆
-    url(r'^api/log_out$', views.log_out),  # 登出
-    url(r'^api/index$', views.index),  # 主页
+    url(r'^register$', views.register),  # 注册
+    url(r'^login$', views.login),  # 登陆
+    url(r'^log_out$', views.log_out),  # 登出
+    url(r'^index$', views.index),  # 主页
 
 
     # url(r'^temp_filter$', views.temp_filter),  # 模板过滤器
