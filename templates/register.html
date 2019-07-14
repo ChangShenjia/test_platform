@@ -169,7 +169,7 @@
             var data = $(id).serializeJSON();
             var url;
             if (id === "#register_form") {
-                url = '/api/register/';
+                url = '/register/';
             }
             $.ajax({
                 type: 'post',
@@ -178,7 +178,7 @@
                 contentType: "application/json",
                 success: function (data) {
                     if (data === '恭喜您，账号已成功注册') {
-                        window.location.href = '/api/login/';
+                        window.location.href = '/login/';
                     } else {
                         alert(data);
                     }
