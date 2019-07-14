@@ -3,10 +3,11 @@
 <head>
     {% load staticfiles %}
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>登录</title>
+    <title>登 录</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="{% static 'assets/iconfont/style.css' %}" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/assets/css/customStyle.css">
 
     <style>
         body {
@@ -99,7 +100,7 @@
 <body style="background:url({% static "assets/img/bg.jpg" %}) no-repeat;">
 
 <div class="container wrap1" style="height:450px;">
-    <h2 class="mg-b20 text-center">Welcome to HttpRunnerManager</h2>
+    <h2 class="mg-b20 text-center" style="font-size:25px;">Welcome to BehaviorAnalysisPlatform</h2>
     <div class="col-sm-8 col-md-5 center-auto pd-sm-50 pd-xs-20 main_content">
         <p class="text-center font16">用户登录</p>
         <form action="/api/login/" role="form" method="POST" id="login_form">
@@ -119,7 +120,6 @@
             </div>
             <button class="login_btn" id="login_submit" value="Login" type="submit">登 录</button>
         </form>
-
     </div><!--row end-->
 </div><!--container end-->
 
