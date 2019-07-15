@@ -1,0 +1,35 @@
+.button-log_out{
+    padding-right: 20px;
+}
+
+.font-middle{
+    text-align: center;
+}
+
+.daohang-bottom{
+    position: fixed;
+    right: 0;
+    bottom: 0px;
+    left: 180px;
+    overflow: auto;
+    width: 100%;
+    height: 50px;
+    background-color: #1f2222;
+}
+
+@media only screen and (min-width: 641px) {
+    .admin-sidebar_right {
+        display: block;
+        position: fixed
+    }
+}
+
+.admin-sidebar_right {
+    width: 50px;
+    min-height: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    right: 0;
+    top: 0px;
+    background-color: #1f2222;
+}
