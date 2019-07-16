@@ -18,7 +18,7 @@
 }
 
 .admin-main {
-    background: #1f2222;
+    background: #2a3542;
 }
 
 .admin-menu {
@@ -351,7 +351,6 @@ gallery.html css
 
 .sideMenu h3.on {
     color: #ff6c60;
-    background: #35404d
 }
 
 .sideMenu h3 a {
@@ -471,10 +470,10 @@ gallery.html css
 .admin-biaogelist {
     background-color: #f1f2f7;
     position: fixed;
-    right: 0;
-    bottom: 0;
-    top: 35px;
-    left: 210px;
+    right: 50px;
+    bottom: 50px;
+    top: 50px;
+    left: 180px;
     overflow-y: auto;
     overflow-x: hidden;
 }
@@ -973,7 +972,7 @@ gallery.html css
     overflow: auto;
     width: 100%;
     height: 50px;
-    background-color: #1f2222;
+    background-color: #2a3542;
 }
 
 .daohang ul {

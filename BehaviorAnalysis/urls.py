@@ -6,7 +6,7 @@ urlpatterns = [
     url(r'^register/$', views.register),  # 注册
     url(r'^login/$', views.login),  # 登陆
     url(r'^index/$', views.index),  # 主页
-
+    url(r'^analysis_result/$', views.result_management)
 
     # url(r'^temp_filter$', views.temp_filter),  # 模板过滤器
     # url(r'^temp_inherit$', views.temp_inherit),  # 模板继承

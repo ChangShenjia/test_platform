@@ -99,3 +99,23 @@ def index(request):
 
     init_filter_session(request)
     return render_to_response('index.html', manage_info)
+
+
+@login_check
+def result_management(request):
+    """
+    结果管理
+    :param request:
+    :return:
+    """
+    account = request.session["now_account"]
+    # if request.is_ajax():
+    #     testconfig_info = json.loads(request.body.decode('utf-8'))
+    #     msg = config_info_logic(**testconfig_info)
+    #     return HttpResponse(get_ajax_msg(msg, '/api/config_list/1/'))
+    # elif request.method == 'GET':
+    manage_info = {
+        'account': account,
+        # 'project': ProjectInfo.objects.all().values('project_name').order_by('-create_time')
+    }
+    return render_to_response('result_management.html', manage_info)
